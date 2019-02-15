@@ -30,7 +30,6 @@ public class ApiRegister extends ListenerAdapter {
     public void onMessageReceived(MessageReceivedEvent event) {
         Message message = event.getMessage();
 
-
         MessageChannel channel = event.getChannel();
         String content = message.getContentDisplay();
         Guild guild = event.getGuild();
@@ -48,30 +47,6 @@ public class ApiRegister extends ListenerAdapter {
                     .complete();
         }
     }
-//    public void onMessageReceived(MessageReceivedEvent event) {
-//        Message message = event.getMessage();
-//        long authorID = event.getMessage().getAuthor().getIdLong();
-//
-//
-//        MessageChannel channel = event.getChannel();
-//        String content = message.getContentDisplay();
-//        Guild guild = event.getGuild();
-//
-//        if (content.startsWith("!api")) {
-//            String capturedContent = content.substring(5);
-//
-//            getInfo(authorID, capturedContent, event, message);
-//
-//            message
-//                    .delete()
-//                    .complete();
-//            message
-//                    .getChannel()
-//                    .sendMessage("Deleted to hide your information!")
-//                    .complete();
-//        }
-//    }
-
 
     //9F1DA7B3-F32A-024F-B76A-7A496E9A207F7EAF1AF3-DB60-493B-B4E5-5503BA064F6B
 //    E7E236B4-F9D1-394E-BCEC-23885EE5CF535756B9D2-631B-4F28-9CFF-2EA3D93B79BA
