@@ -20,6 +20,7 @@ public class Discord {
         JDABuilder builder = new JDABuilder(AccountType.BOT)
                 .setToken(token)
                 .addEventListener(new ApiRegister());
+//                .addEventListener(new UserPatrol());
         builder.buildAsync();
     }
 

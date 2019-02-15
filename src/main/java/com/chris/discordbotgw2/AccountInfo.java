@@ -19,6 +19,16 @@ public class AccountInfo {
     private String api_key;
     private Long discord_uid;
     private String access;
+    private int on_yaks_or_links;
+
+    public AccountInfo(String name, int world, int wvw_rank, String api_key, Long discord_uid, String access) {
+        this.name = name;
+        this.world = world;
+        this.wvw_rank = wvw_rank;
+        this.api_key = api_key;
+        this.discord_uid = discord_uid;
+        this.access = access;
+    }
 
     public Integer getId() {
         return id;
